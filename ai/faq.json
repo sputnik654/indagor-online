@@ -1,0 +1,49 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://indagor.online/ai/faq.json",
+  "inLanguage": "en-US",
+  "lastUpdated": "2026-11-22",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can we start with a small scope?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many projects start with a single slice: one page, one automation scenario or one reporting setup. That format shows a working result in a few weeks, and you decide afterwards whether to expand. The first stage is fixed in the contract exactly like a large project."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Klondayk?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Klondayk is INDAGOR's platform for commercial real estate management: units, tenants, leases, requests and reporting in one interface instead of spreadsheets and email threads. For a managing company that means less manual reconciliation and a clear picture of the property. The module set is defined by the asset's needs, and the rollout plan is discussed on request in Telegram."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work under a contract?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Scope, timeline, price and acceptance terms are fixed in the contract before the start. You know upfront what you get and when; we know the boundaries of the task and the definition of done. Additional work is agreed separately, so the budget never changes mid-project without your decision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is the price formed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Price depends on scope, integration complexity and the number of scenarios — not on the number of pages or screens. After the brief we prepare an estimate with the stage breakdown and fix it before development starts. If scope changes, it is documented as a separate agreement. There are no hidden charges in the estimate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do you need to start?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A description of the task: what should change in the process and what outcome you expect. If you have materials — the current website, process maps, examples of systems — attach them. Everything else is clarified in the first call: constraints, deadlines, budget range. You then receive a proposal with stages, price and plan."
+      }
+    }
+  ]
+}

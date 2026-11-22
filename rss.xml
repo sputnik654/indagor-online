@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+ <channel>
+  <title>INDAGOR Insights</title>
+  <link>https://indagor.online/blog/</link>
+  <description>INDAGOR articles on web development, AI automation, CRM and digital ecosystems for commercial real estate.</description>
+  <language>en-US</language>
+  <lastBuildDate>Sun, 22 Nov 2026 12:00:00 +0300</lastBuildDate>
+  <atom:link href="https://indagor.online/rss.xml" rel="self" type="application/rss+xml" />
+  <item>
+   <title>What to automate first: 5 processes that eat up business time</title>
+   <link>https://indagor.online/blog/what-to-automate-first/</link>
+   <guid isPermaLink="true">https://indagor.online/blog/what-to-automate-first/</guid>
+   <pubDate>Wed, 11 Nov 2026 12:00:00 +0300</pubDate>
+   <description>The five routine processes that most often eat up business time, how to automate them and which metrics prove the effect.</description>
+  </item>
+ </channel>
+</rss>

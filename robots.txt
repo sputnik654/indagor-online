@@ -1,0 +1,37 @@
+# robots.txt — INDAGOR (https://indagor.online)
+# English version of indagor.ru. The Russian original lives at https://indagor.ru.
+User-agent: *
+Allow: /
+
+# --- AI crawlers: explicitly allowed so the site can be cited by LLMs ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: YandexAdditional
+Allow: /
+
+Sitemap: https://indagor.online/sitemap.xml

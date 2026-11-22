@@ -1,0 +1,101 @@
+{
+  "@context": "https://schema.org",
+  "documentType": "ai-summary",
+  "version": "1.0",
+  "lastUpdated": "2026-11-22",
+  "language": "en",
+  "name": "INDAGOR",
+  "description": "INDAGOR is a digital engineering studio: corporate websites and web applications, AI automation of business processes, CRM and management analytics, and the Klondayk platform for commercial real estate.",
+  "url": "https://indagor.online/",
+  "russianVersion": "https://indagor.ru/",
+  "organization": {
+    "@type": "Organization",
+    "@id": "https://indagor.online/#organization",
+    "name": "INDAGOR",
+    "alternateName": [
+      "Indagor Digital Systems"
+    ],
+    "url": "https://indagor.online/",
+    "slogan": "Complex ideas. Coherent systems.",
+    "description": "INDAGOR designs and builds digital products for business: websites and web applications, AI assistants and process automation, tracking systems and management reporting, and digital ecosystems for commercial real estate.",
+    "areaServed": {
+      "@type": "Place",
+      "name": "Worldwide"
+    },
+    "sameAs": [
+      "https://t.me/indagor_digital",
+      "https://tenchat.ru/indagor"
+    ],
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "url": "https://t.me/INDAGOR_CEO",
+        "availableLanguage": [
+          "en",
+          "ru"
+        ],
+        "areaServed": {
+          "@type": "Place",
+          "name": "Worldwide"
+        }
+      }
+    ],
+    "knowsAbout": [
+      "Web development",
+      "Web applications",
+      "Artificial intelligence",
+      "Business process automation",
+      "CRM systems",
+      "Management analytics",
+      "Commercial real estate",
+      "PropTech"
+    ]
+  },
+  "services": [
+    {
+      "name": "Web development",
+      "url": "https://indagor.online/services/web-development/",
+      "description": "Landing pages, corporate websites, web applications, customer portals, catalogues and CRM integrations."
+    },
+    {
+      "name": "AI and automation",
+      "url": "https://indagor.online/services/ai-automation/",
+      "description": "AI assistants, chatbots, document processing, CRM integrations, data parsing."
+    },
+    {
+      "name": "CRM and analytics",
+      "url": "https://indagor.online/services/crm-analytics/",
+      "description": "CRM setup, lead and deal tracking, integrations, dashboards and management reporting."
+    }
+  ],
+  "product": {
+    "name": "Klondayk",
+    "url": "https://indagor.online/klondayk/",
+    "description": "Proprietary INDAGOR platform for end-to-end commercial real estate management: tenants, units, service requests and operations in one data loop.",
+    "startingPrice": {
+      "value": "150000",
+      "currency": "RUB",
+      "note": "Starting price of the base pilot deployment; the final quote is fixed in the contract."
+    }
+  },
+  "keyPages": {
+    "home": "https://indagor.online/",
+    "klondayk": "https://indagor.online/klondayk/",
+    "about": "https://indagor.online/about/",
+    "insights": "https://indagor.online/blog/",
+    "article": "https://indagor.online/blog/what-to-automate-first/",
+    "privacy": "https://indagor.online/privacy.html",
+    "offer": "https://indagor.online/offer.html"
+  },
+  "contact": {
+    "telegram": "https://t.me/INDAGOR_CEO",
+    "channel": "https://t.me/indagor_digital"
+  },
+  "citation": {
+    "allowed": true,
+    "attribution": "INDAGOR, https://indagor.online",
+    "summarization": true,
+    "training": true
+  }
+}

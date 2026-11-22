@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "name": "INDAGOR services",
+  "url": "https://indagor.online/",
+  "inLanguage": "en-US",
+  "lastUpdated": "2026-11-22",
+  "itemListElement": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Web development",
+        "serviceType": "Corporate website and web application development",
+        "description": "Landing pages, corporate websites, web applications and customer portals, catalogues and product showcases, CRM and third-party integrations.",
+        "url": "https://indagor.online/services/web-development/",
+        "provider": {
+          "@id": "https://indagor.online/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "AI and automation",
+        "serviceType": "AI implementation and business process automation",
+        "description": "AI assistants and chatbots for support and lead qualification, document processing automation, CRM integrations, parsing and data collection, automation of repetitive operations.",
+        "url": "https://indagor.online/services/ai-automation/",
+        "provider": {
+          "@id": "https://indagor.online/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "CRM and analytics",
+        "serviceType": "CRM implementation and management analytics",
+        "description": "CRM and pipeline setup, a single register of leads and deals, integrations with the website and external services, dashboards and regular management reporting.",
+        "url": "https://indagor.online/services/crm-analytics/",
+        "provider": {
+          "@id": "https://indagor.online/#organization"
+        }
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Klondayk",
+        "description": "Proprietary INDAGOR platform for commercial real estate management: tenants, units, service requests, operations, analytics and reporting in one interface.",
+        "url": "https://indagor.online/klondayk/",
+        "brand": {
+          "@id": "https://indagor.online/#organization"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "lowPrice": "150000",
+          "priceCurrency": "RUB",
+          "offerCount": 1,
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }
+  ]
+}

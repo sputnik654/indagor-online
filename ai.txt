@@ -1,0 +1,33 @@
+# ai.txt — INDAGOR (https://indagor.online)
+# Machine-readable map of the site for AI agents and LLM crawlers.
+# Updated: 2026-11-22
+
+Name: INDAGOR
+Type: digital engineering studio (web development, AI automation, CRM, real estate platforms)
+Language: en
+Contact: https://t.me/INDAGOR_CEO
+Channel: https://t.me/indagor_digital
+Canonical: https://indagor.online/
+Russian version: https://indagor.ru/
+
+# Content of this site may be quoted with attribution: INDAGOR, https://indagor.online
+Citation: allowed (with attribution)
+Summarization: allowed
+Training: allowed
+
+# Structured data
+Summary: https://indagor.online/ai/summary.json
+FAQ: https://indagor.online/ai/faq.json
+Services: https://indagor.online/ai/service.json
+LLM index: https://indagor.online/llms.txt
+RSS: https://indagor.online/rss.xml
+Sitemap: https://indagor.online/sitemap.xml
+
+# Key pages
+Home: https://indagor.online/
+Klondayk platform: https://indagor.online/klondayk/
+Web development: https://indagor.online/services/web-development/
+AI and automation: https://indagor.online/services/ai-automation/
+CRM and analytics: https://indagor.online/services/crm-analytics/
+About: https://indagor.online/about/
+Insights: https://indagor.online/blog/
