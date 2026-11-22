@@ -73,11 +73,7 @@
     "name": "Klondayk",
     "url": "https://indagor.online/klondayk/",
     "description": "Proprietary INDAGOR platform for end-to-end commercial real estate management: tenants, units, service requests and operations in one data loop.",
-    "startingPrice": {
-      "value": "150000",
-      "currency": "RUB",
-      "note": "Starting price of the base pilot deployment; the final quote is fixed in the contract."
-    }
+    "pricing": "Price on request. The base pilot deployment is quoted per property and fixed in the contract."
   },
   "keyPages": {
     "home": "https://indagor.online/",

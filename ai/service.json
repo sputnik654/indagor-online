@@ -54,13 +54,6 @@
         "url": "https://indagor.online/klondayk/",
         "brand": {
           "@id": "https://indagor.online/#organization"
-        },
-        "offers": {
-          "@type": "AggregateOffer",
-          "lowPrice": "150000",
-          "priceCurrency": "RUB",
-          "offerCount": 1,
-          "availability": "https://schema.org/InStock"
         }
       }
     }
