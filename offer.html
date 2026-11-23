@@ -194,6 +194,12 @@ body.has-cookie{padding-bottom:118px}
  .cookie-text{font-size:14px}
  .cookie-actions{width:100%;justify-content:space-between}
 }
+/* ===== Contact dialog: LinkedIn / email / Telegram ===== */
+.tgm-link{display:block;text-align:center;margin-top:18px;font-size:12.5px;letter-spacing:.06em;color:#8f8c84;border-bottom:1px solid rgba(214,173,99,.28);padding-bottom:2px;text-decoration:none;transition:color .2s,border-color .2s}
+.tgm-link:hover{color:var(--gold2);border-color:var(--gold)}
+.tgm-dialog .tgm-btn{text-decoration:none}
+.footer-inner a,.footer-mail{display:inline-flex;align-items:center;gap:8px}
+.footer-mail-ico{flex:0 0 auto;opacity:.9}
 </style>
 </head>
 <body>
@@ -278,7 +284,7 @@ body.has-cookie{padding-bottom:118px}
 
 <footer><div class="container footer-inner">
  <span>© 2026 INDAGOR. All rights reserved.</span>
- <a href="mailto:sputnik6565@gmail.com" toolname="contact_email" tooldescription="Email INDAGOR at sputnik6565@gmail.com">sputnik6565@gmail.com</a>
+ <a class="footer-mail" href="mailto:indagor.ceo@gmail.com" toolname="contact_email" tooldescription="Email INDAGOR at indagor.ceo@gmail.com"><svg class="footer-mail-ico" width="15" height="15" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true" focusable="false"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM98.71,128,40,181.81V74.19ZM116.74,144h22.52L198,208H54ZM157.29,128,216,74.19V181.81ZM216,64l-88,80L40,64Z"/></svg>indagor.ceo@gmail.com</a>
  <a href="index.html">Home</a>
  <a href="/offer.html">Offer</a>
  <a href="privacy.html">Privacy Policy</a>
@@ -286,14 +292,14 @@ body.has-cookie{padding-bottom:118px}
  <div class="container"><p class="footer-note">INDAGOR is an independent studio for digital products and AI systems for business. Official sites: indagor.ru (RU) and indagor.online (EN). Not affiliated with indagor.com.</p></div>
 </footer>
 <!-- Telegram modal -->
-<div class="tgm-overlay" id="tgModal" role="dialog" aria-modal="true" aria-labelledby="tgModalTitle" aria-describedby="tgModalHint">
+<div class="tgm-overlay" id="tgModal" role="dialog" aria-modal="true" aria-labelledby="tgModalTitle" aria-describedby="tgModalSub">
  <div class="tgm-dialog">
   <button type="button" class="tgm-close" id="tgClose" aria-label="Close window">&times;</button>
-  <h2 class="tgm-title" id="tgModalTitle">Contact us</h2>
-  <p class="tgm-sub">Telegram is our main channel: briefs, presentations, questions.</p>
-  <a class="tgm-btn tgm-btn-primary" id="tgOpen" href="tg://resolve?domain=INDAGOR_CEO" toolname="open_telegram" tooldescription="Open a chat with INDAGOR in the Telegram app">Open Telegram</a>
-  <button type="button" class="tgm-btn tgm-btn-copy" id="tgCopy" aria-label="Copy handle @INDAGOR_CEO to clipboard" aria-live="polite" toolname="copy_telegram_handle" tooldescription="Copy @INDAGOR_CEO to write on Telegram manually">Copy handle @INDAGOR_CEO</button>
-  <p class="tgm-hint" id="tgModalHint">If Telegram didn't open, copy the handle and message us in the app.</p>
+  <h2 class="tgm-title" id="tgModalTitle">Let's discuss your project</h2>
+  <p class="tgm-sub" id="tgModalSub">Choose the most convenient way to reach us. We typically reply within a few hours.</p>
+  <a class="tgm-btn tgm-btn-primary" id="tgLinkedIn" href="https://www.linkedin.com/in/evgenii-indagor/" target="_blank" rel="noopener noreferrer me" toolname="contact_linkedin" tooldescription="Message Evgenii Praudin on LinkedIn">Connect on LinkedIn</a>
+  <a class="tgm-btn tgm-btn-copy" id="tgEmail" href="mailto:indagor.ceo@gmail.com" toolname="contact_email" tooldescription="Send an email to INDAGOR">Send an email</a>
+  <a class="tgm-link" id="tgTelegram" href="https://t.me/INDAGOR_CEO" target="_blank" rel="noopener noreferrer">Message on Telegram</a>
  </div>
 </div>
 <script>
@@ -302,7 +308,7 @@ body.has-cookie{padding-bottom:118px}
  var overlay=document.getElementById('tgModal');
  if(!overlay){return;}
  var closeBtn=document.getElementById('tgClose');
- var openBtn=document.getElementById('tgOpen');
+ var openBtn=document.getElementById('tgLinkedIn');
  var copyBtn=document.getElementById('tgCopy');
  var lastFocus=null;
  function closestLink(el){
@@ -325,6 +331,7 @@ body.has-cookie{padding-bottom:118px}
   if(lastFocus&&lastFocus.focus){lastFocus.focus();}
  }
  document.addEventListener('click',function(e){
+  if(overlay.contains(e.target)){return;}
   var a=closestLink(e.target);
   if(a){openModal(e);}
  });
