@@ -275,6 +275,7 @@ body.has-cookie{padding-bottom:118px}
  .cookie-actions{width:100%;justify-content:space-between}
 }
 /* ===== Contact dialog: LinkedIn / email / Telegram ===== */
+.tgm-btn-copy.is-copied{background:rgba(214,173,99,.14);border-color:var(--gold);color:var(--gold2)}
 .tgm-link{display:block;text-align:center;margin-top:18px;font-size:12.5px;letter-spacing:.06em;color:#8f8c84;border-bottom:1px solid rgba(214,173,99,.28);padding-bottom:2px;text-decoration:none;transition:color .2s,border-color .2s}
 .tgm-link:hover{color:var(--gold2);border-color:var(--gold)}
 .tgm-dialog .tgm-btn{text-decoration:none}
@@ -368,7 +369,7 @@ body.has-cookie{padding-bottom:118px}
  if(!overlay){return;}
  var closeBtn=document.getElementById('tgClose');
  var openBtn=document.getElementById('tgLinkedIn');
- var copyBtn=document.getElementById('tgCopy');
+ var emailBtn=document.getElementById('tgEmail');
  var lastFocus=null;
  function closestLink(el){
   while(el&&el!==document){
@@ -399,24 +400,44 @@ body.has-cookie{padding-bottom:118px}
  document.addEventListener('keydown',function(e){
   if(e.key==='Escape'&&overlay.classList.contains('is-open')){closeModal();}
  });
- if(copyBtn){
-  copyBtn.addEventListener('click',function(){
-   var original=copyBtn.textContent;
-   function done(){
-    copyBtn.textContent='Copied!';
-    setTimeout(function(){copyBtn.textContent=original;},2000);
-   }
-   function fallback(){
-    var ta=document.createElement('textarea');
-    ta.value='@INDAGOR_CEO';ta.setAttribute('readonly','');
-    ta.style.position='absolute';ta.style.left='-9999px';ta.style.top='0';
-    document.body.appendChild(ta);ta.select();
-    try{document.execCommand('copy');done();}catch(err){}
-    document.body.removeChild(ta);
-   }
+ if(emailBtn){
+  var MAIL='indagor.ceo@gmail.com';
+  var emailTimer=null;
+  var emailOriginal=emailBtn.textContent;
+  emailBtn.setAttribute('aria-live','polite');
+  function emailReset(){
+   emailBtn.textContent=emailOriginal;
+   emailBtn.classList.remove('is-copied');
+   emailBtn.setAttribute('aria-label','Copy email address');
+  }
+  function emailDone(){
+   emailBtn.textContent='Email Copied!';
+   emailBtn.classList.add('is-copied');
+   emailBtn.setAttribute('aria-label','Email address copied: indagor.ceo@gmail.com');
+   if(emailTimer){clearTimeout(emailTimer);}
+   emailTimer=setTimeout(emailReset,2000);
+  }
+  function emailFallbackCopy(){
+   var ta=document.createElement('textarea');
+   ta.value=MAIL;ta.setAttribute('readonly','');
+   ta.style.position='absolute';ta.style.left='-9999px';ta.style.top='0';
+   document.body.appendChild(ta);ta.select();
+   var ok=false;
+   try{ok=document.execCommand('copy');}catch(err){ok=false;}
+   document.body.removeChild(ta);
+   return ok;
+  }
+  emailBtn.setAttribute('aria-label','Copy email address');
+  emailBtn.addEventListener('click',function(e){
+   if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey){return;}
    if(navigator.clipboard&&navigator.clipboard.writeText){
-    navigator.clipboard.writeText('@INDAGOR_CEO').then(done).catch(fallback);
-   }else{fallback();}
+    e.preventDefault();
+    navigator.clipboard.writeText(MAIL).then(emailDone).catch(function(){
+     if(emailFallbackCopy()){emailDone();}else{window.location.href='mailto:'+MAIL;}
+    });
+   }else{
+    if(emailFallbackCopy()){e.preventDefault();emailDone();}
+   }
   });
  }
 })();
