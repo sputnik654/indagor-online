@@ -5,8 +5,16 @@
   <link>https://indagor.online/blog/</link>
   <description>INDAGOR articles on web development, AI automation, CRM and digital ecosystems for commercial real estate.</description>
   <language>en-US</language>
-  <lastBuildDate>Sun, 22 Nov 2026 12:00:00 +0300</lastBuildDate>
+  <lastBuildDate>Mon, 23 Nov 2026 18:00:00 +0300</lastBuildDate>
   <atom:link href="https://indagor.online/rss.xml" rel="self" type="application/rss+xml" />
+  <item>
+   <title>The Shopping Centre Wasn't the Problem. Its Digital Infrastructure Was.</title>
+   <link>https://indagor.online/blog/klondayk-digital-infrastructure-for-commercial-real-estate/</link>
+   <guid isPermaLink="true">https://indagor.online/blog/klondayk-digital-infrastructure-for-commercial-real-estate/</guid>
+   <pubDate>Mon, 23 Nov 2026 18:00:00 +0300</pubDate>
+   <category>Commercial real estate</category>
+   <description>How INDAGOR built Klondayk: a modular digital platform that connects property management, leasing, marketing, analytics and AI for shopping centres.</description>
+  </item>
   <item>
    <title>What to automate first: 5 processes that eat up business time</title>
    <link>https://indagor.online/blog/what-to-automate-first/</link>
