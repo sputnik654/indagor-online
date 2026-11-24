@@ -30,7 +30,7 @@ This site is available for AI indexing and retrieval at https://indagor.online. 
 
 ## Contacts
 
-- Email: indagor.ceo@gmail.com — briefs, documents, procurement and vendor onboarding.
+- Email: ceo@indagor.online — briefs, documents, procurement and vendor onboarding.
 - [Direct messages](https://t.me/INDAGOR_CEO): project discussions and requests for the Klondayk presentation.
 - [INDAGOR Telegram channel](https://t.me/indagor_digital): public studio channel.
 
@@ -48,4 +48,4 @@ This site is available for AI indexing and retrieval at https://indagor.online. 
 - Crawling: https://indagor.online/robots.txt explicitly allows GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-Web, PerplexityBot, Google-Extended, Applebot-Extended, CCBot, YandexAdditional.
 - Structured data on the page: Organization (sameAs, contactPoint), WebPage (dates, author), WebSite (SearchAction), 4 x Service, Product (Klondayk), FAQPage with 5 questions.
 - Sitemap: https://indagor.online/sitemap.xml — with hreflang pairs (en / ru / x-default).
-- Contact for AI agents and humans: indagor.ceo@gmail.com, https://t.me/INDAGOR_CEO
+- Contact for AI agents and humans: ceo@indagor.online, https://t.me/INDAGOR_CEO
