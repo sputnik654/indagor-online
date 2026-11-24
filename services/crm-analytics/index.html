@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080909">
 <title>CRM implementation and management analytics — INDAGOR</title>
-<meta name="description" content="CRM implementation, lead tracking, reporting and dashboards: we put data in order and turn it into clear numbers for decisions. Integrations with the systems you already run.">
+<meta name="description" content="CRM implementation, lead tracking, reporting and dashboards: we put data in order and turn it into clear numbers for decisions. Integrations included.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://indagor.online/services/crm-analytics/">
  <link rel="alternate" hreflang="en" href="https://indagor.online/services/crm-analytics/">
@@ -110,7 +110,7 @@
      "name": "Why implement a CRM when we already have spreadsheets?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Spreadsheets work while there are few leads and one person handles them. As soon as several people are involved, statuses drift apart and the history of enquiries is lost. A CRM records the owner, the deal stage and the agreements in one place, so nobody has to dig through email threads to find out who promised what."
+      "text": "Spreadsheets work while there are few leads and one person handles them. As soon as several people are involved, statuses drift apart and the history of inquiries is lost. A CRM records the owner, the deal stage and the agreements in one place, so nobody has to dig through email threads to find out who promised what."
      }
     },
     {
@@ -126,7 +126,7 @@
      "name": "Which metrics usually go on the dashboard?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "It depends on the role: managers get pipeline, conversion, average deal cycle and plan vs actual; operational staff get overdue tasks and unanswered enquiries. The rule is simple — only numbers that trigger a decision go on the dashboard, not everything that can be counted. Otherwise nobody opens the report."
+      "text": "It depends on the role: managers get pipeline, conversion, average deal cycle and plan vs actual; operational staff get overdue tasks and unanswered inquiries. The rule is simple — only numbers that trigger a decision go on the dashboard, not everything that can be counted. Otherwise nobody opens the report."
      }
     },
     {
@@ -314,7 +314,18 @@ p,li{font-size:var(--fs-body);line-height:1.75}
 .tgm-dialog .tgm-btn{text-decoration:none}
 .footer-inner a,.footer-mail{display:inline-flex;align-items:center;gap:8px}
 .footer-mail-ico{flex:0 0 auto;opacity:.9}
+
+/* --- Comparison tables (GEO) --- */
+.table-wrap{overflow-x:auto;margin:22px 0 6px;-webkit-overflow-scrolling:touch}
+.table-wrap table{width:100%;min-width:640px;border-collapse:collapse;font-size:13.5px}
+.table-wrap th,.table-wrap td{text-align:left;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08);vertical-align:top;color:#cfcdc5}
+.table-wrap th{color:var(--gold);font-weight:500;font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-bottom-color:rgba(214,173,99,.35)}
+.table-wrap tr:last-child td{border-bottom:0}
+.table-wrap td:first-child{color:#fff;font-weight:500}
+@media(max-width:700px){.table-wrap table{min-width:560px}}
 </style>
+<meta name="analytics-endpoint" content="https://bright-wisp-6c6965.netlify.app/track">
+<script defer src="/assets/analytics-tracker.js?v=1"></script>
 </head>
 <body>
 <header><div class="container">
@@ -336,7 +347,7 @@ p,li{font-size:var(--fs-body);line-height:1.75}
  </div></section>
 <figure class="poster"><div class="container">
   <div class="floating-image">
-   <img src="/assets/crm-analytics-hero.webp" alt="INDAGOR CRM and management analytics" width="835" height="933" loading="eager" fetchpriority="high" decoding="async">
+   <img src="/assets/crm-analytics-hero.webp" srcset="/assets/crm-analytics-hero-480.webp 480w, /assets/crm-analytics-hero-720.webp 720w, /assets/crm-analytics-hero.webp 835w" sizes="(max-width: 700px) calc(100vw - 30px), 640px" alt="INDAGOR CRM and management analytics" width="835" height="933" loading="eager" fetchpriority="high" decoding="async">
   </div>
 </div></figure>
 
@@ -347,7 +358,7 @@ p,li{font-size:var(--fs-body);line-height:1.75}
   <p class="intro">We start not with a system choice but with a question: which decisions do you make, and which numbers are missing for them. The setup is built around that.</p>
   <div class="grid">
    <article class="card"><span class="num">01</span><h3>CRM setup</h3><p>Pipelines and stages that match the real process, required fields, access rights. The system reflects the work instead of forcing you to adapt to it.</p></article>
-   <article class="card"><span class="num">02</span><h3>Lead and deal tracking</h3><p>A single register of enquiries with history, tasks and an owner. It is always clear where each lead stands and what happens next.</p></article>
+   <article class="card"><span class="num">02</span><h3>Lead and deal tracking</h3><p>A single register of inquiries with history, tasks and an owner. It is always clear where each lead stands and what happens next.</p></article>
    <article class="card"><span class="num">03</span><h3>Integrations</h3><p>Website, email, messengers, telephony, accounting systems. Leads are created automatically — no manual transfer, nothing gets lost.</p></article>
    <article class="card"><span class="num">04</span><h3>Dashboards</h3><p>Metrics by role: pipeline, conversion and plan vs actual for managers; overdue tasks and unanswered leads for the team.</p></article>
    <article class="card"><span class="num">05</span><h3>Reporting and routine</h3><p>Scheduled reports instead of "could you pull this by Friday". Format and cadence are agreed upfront.</p></article>
@@ -358,7 +369,7 @@ p,li{font-size:var(--fs-body);line-height:1.75}
  <section><div class="container">
   <div class="eyebrow">Principle</div>
   <h2>Numbers you can act on</h2>
-  <p class="intro">Reporting is not for reporting's sake. Every metric must answer a specific management question.</p>
+  <p class="intro">Reporting exists to support decisions, not to decorate a meeting. So we start with a management question — how many inquiries arrived this week, where deals stall, who is not replying on time — and build the metric around it. Then we check where the data comes from: if the only source is maintained by hand, the source is fixed first. After that the metric goes into a dashboard where you can see the trend and drill into detail. This keeps the report from turning into a wall of charts: every block answers its own question, and any block that does not change a decision is removed rather than kept for decoration.</p>
   <div class="steps">
    <div class="step"><b>01</b><h3>A single source of truth</h3><p>Data lives in one system, not in five spreadsheets and email threads. Discrepancies are excluded by design.</p></div>
    <div class="step"><b>02</b><h3>Metrics tied to decisions</h3><p>Only what changes an action goes on the dashboard. Redundant metrics are why reports stop being opened.</p></div>
@@ -366,13 +377,31 @@ p,li{font-size:var(--fs-body);line-height:1.75}
   </div>
  </div></section>
 
+ <section id="scope"><div class="container">
+  <div class="eyebrow">Scope and format</div>
+  <h2>What you get once the CRM is set up</h2>
+  <p class="intro">A CRM is not for storing contacts; it answers questions: how many inquiries came in, what happened to them, where revenue leaks. Setup starts with the pipeline: which stages a deal passes, who owns each one, and what counts as success. Then comes a single register: inquiries from the website, email and messengers land in one place, duplicates are merged, history is kept. Reporting follows: conversion by stage, response time, workload per manager, reasons for lost deals. Scope depends on the number of lead sources and the rules you actually work by. Reports are built from your own data rather than market averages, which is what makes them usable in decisions.</p>
+  <div class="table-wrap">
+   <table>
+    <thead><tr><th>What we set up</th><th>What management sees</th><th>What you need to start</th><th>What drives scope</th></tr></thead>
+    <tbody>
+      <tr><td>Pipeline and stages</td><td>Where deals stop and what the losses cost</td><td>Description of the current sales process</td><td>Number of stages and transition rules</td></tr>
+      <tr><td>Single lead register</td><td>How many inquiries really arrived, none lost</td><td>Source list: website, email, messengers</td><td>Number of sources and data quality</td></tr>
+      <tr><td>Tasks and deadlines</td><td>Who must reply and when, where overdue items sit</td><td>Routing rules and response targets</td><td>Team size and roles</td></tr>
+      <tr><td>Dashboard</td><td>Conversion, response time, workload, loss reasons</td><td>System access and a metric list</td><td>Number of metrics and their sources</td></tr>
+      <tr><td>Integrations</td><td>Data is not retyped between systems</td><td>System list and the way they exchange data</td><td>Complexity of the data exchange</td></tr>
+    </tbody>
+   </table>
+  </div>
+ </div></section>
+
  <section id="faq"><div class="container">
   <div class="eyebrow">Questions and answers</div>
   <h2>What clients ask</h2>
   <div class="faq-list">
-    <article class="faq-item reveal"><h3>Why implement a CRM when we already have spreadsheets?</h3><p>Spreadsheets work while there are few leads and one person handles them. As soon as several people are involved, statuses drift apart and the history of enquiries is lost. A CRM records the owner, the deal stage and the agreements in one place, so nobody has to dig through email threads to find out who promised what.</p></article>
+    <article class="faq-item reveal"><h3>Why implement a CRM when we already have spreadsheets?</h3><p>Spreadsheets work while there are few leads and one person handles them. As soon as several people are involved, statuses drift apart and the history of inquiries is lost. A CRM records the owner, the deal stage and the agreements in one place, so nobody has to dig through email threads to find out who promised what.</p></article>
     <article class="faq-item reveal"><h3>Can analytics be connected to what we already have?</h3><p>Yes, if the system exposes its data: API, exports or a direct database. We collect metrics from existing sources and build reporting on top, without forcing an immediate tool replacement. A full migration is discussed separately, and only where the current system genuinely fails.</p></article>
-    <article class="faq-item reveal"><h3>Which metrics usually go on the dashboard?</h3><p>It depends on the role: managers get pipeline, conversion, average deal cycle and plan vs actual; operational staff get overdue tasks and unanswered enquiries. The rule is simple — only numbers that trigger a decision go on the dashboard, not everything that can be counted. Otherwise nobody opens the report.</p></article>
+    <article class="faq-item reveal"><h3>Which metrics usually go on the dashboard?</h3><p>It depends on the role: managers get pipeline, conversion, average deal cycle and plan vs actual; operational staff get overdue tasks and unanswered inquiries. The rule is simple — only numbers that trigger a decision go on the dashboard, not everything that can be counted. Otherwise nobody opens the report.</p></article>
     <article class="faq-item reveal"><h3>How long does implementation take?</h3><p>Setting up the core is faster than a full migration with history. The timeline depends on the number of users, integrations and the quality of current data: sometimes half the work is cleaning up master data and statuses. A plan with stages and dates is fixed before the start so delivery does not drag on.</p></article>
   </div>
  </div></section>

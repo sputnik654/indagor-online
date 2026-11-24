@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080909">
-<title>Because no personal data of site visitors is collected, there is no data to disclose, transfer or sell — irrespective of the visitor's browser settings.</title>
-<meta name="description" content="AI assistants, chatbots and routine automation: document processing, CRM integrations, data parsing. Rolled out step by step, without replacing the systems you already use.">
+<title>AI implementation and business process automation — INDAGOR</title>
+<meta name="description" content="AI assistants, chatbots and routine automation: document processing, CRM integrations, data parsing. Rolled out step by step, without replacing your systems.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://indagor.online/services/ai-automation/">
  <link rel="alternate" hreflang="en" href="https://indagor.online/services/ai-automation/">
@@ -125,7 +125,7 @@
      "name": "How long does a pilot take?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "A pilot is limited to one scenario — for example, automatic replies to common enquiries or data extraction from documents. That scope is enough to validate the hypothesis before full rollout and to see real numbers. The timeline depends on integration complexity and data quality; it is fixed in the work plan before the start."
+      "text": "A pilot is limited to one scenario — for example, automatic replies to common inquiries or data extraction from documents. That scope is enough to validate the hypothesis before full rollout and to see real numbers. The timeline depends on integration complexity and data quality; it is fixed in the work plan before the start."
      }
     },
     {
@@ -312,7 +312,18 @@ p,li{font-size:var(--fs-body);line-height:1.75}
 .tgm-dialog .tgm-btn{text-decoration:none}
 .footer-inner a,.footer-mail{display:inline-flex;align-items:center;gap:8px}
 .footer-mail-ico{flex:0 0 auto;opacity:.9}
+
+/* --- Comparison tables (GEO) --- */
+.table-wrap{overflow-x:auto;margin:22px 0 6px;-webkit-overflow-scrolling:touch}
+.table-wrap table{width:100%;min-width:640px;border-collapse:collapse;font-size:13.5px}
+.table-wrap th,.table-wrap td{text-align:left;padding:12px 14px;border-bottom:1px solid rgba(255,255,255,.08);vertical-align:top;color:#cfcdc5}
+.table-wrap th{color:var(--gold);font-weight:500;font-size:11px;letter-spacing:.12em;text-transform:uppercase;border-bottom-color:rgba(214,173,99,.35)}
+.table-wrap tr:last-child td{border-bottom:0}
+.table-wrap td:first-child{color:#fff;font-weight:500}
+@media(max-width:700px){.table-wrap table{min-width:560px}}
 </style>
+<meta name="analytics-endpoint" content="https://bright-wisp-6c6965.netlify.app/track">
+<script defer src="/assets/analytics-tracker.js?v=1"></script>
 </head>
 <body>
 <header><div class="container">
@@ -334,7 +345,7 @@ p,li{font-size:var(--fs-body);line-height:1.75}
  </div></section>
 <figure class="poster"><div class="container">
   <div class="floating-image">
-   <img src="/assets/ai-automation-hero.webp" alt="INDAGOR AI and automation: golden statue, network planet, holographic dashboard" width="835" height="941" loading="eager" fetchpriority="high" decoding="async">
+   <img src="/assets/ai-automation-hero.webp" srcset="/assets/ai-automation-hero-480.webp 480w, /assets/ai-automation-hero-720.webp 720w, /assets/ai-automation-hero.webp 835w" sizes="(max-width: 700px) calc(100vw - 30px), 640px" alt="INDAGOR AI and automation: golden statue, network planet, holographic dashboard" width="835" height="941" loading="eager" fetchpriority="high" decoding="async">
   </div>
 </div></figure>
 
@@ -344,7 +355,7 @@ p,li{font-size:var(--fs-body);line-height:1.75}
   <h2>What we automate</h2>
   <p class="intro">Each item is a separate scenario that can run on its own. It makes sense to start where manual work takes the most time.</p>
   <div class="grid">
-   <article class="card"><span class="num">01</span><h3>AI assistants and chatbots</h3><p>Answers to common enquiries, lead qualification, operator prompts. The assistant works from your knowledge base and hands complex cases to a human.</p></article>
+   <article class="card"><span class="num">01</span><h3>AI assistants and chatbots</h3><p>Answers to common inquiries, lead qualification, operator prompts. The assistant works from your knowledge base and hands complex cases to a human.</p></article>
    <article class="card"><span class="num">02</span><h3>Document processing</h3><p>Scan and PDF recognition, extraction of key fields and line items, rule-based validation and transfer into the accounting system with no manual entry.</p></article>
    <article class="card"><span class="num">03</span><h3>CRM integrations</h3><p>Data exchange between website, email, messengers and CRM: deal creation, status updates, notifications to the right owner at the right moment.</p></article>
    <article class="card"><span class="num">04</span><h3>Parsing and data collection</h3><p>Scheduled collection of information from public sources: prices, assortment, vacancies, mentions. Data is normalised and lands in a spreadsheet or database.</p></article>
@@ -356,11 +367,29 @@ p,li{font-size:var(--fs-body);line-height:1.75}
  <section><div class="container">
   <div class="eyebrow">Process</div>
   <h2>How the work runs</h2>
-  <p class="intro">The order is the same as in digital product development: task and success criteria first, technology after.</p>
+  <p class="intro">Automation starts not with a technology choice but with an answer: where is time lost now, and how will you know it got better? First we look at the process — who does what by hand, how often, and where errors appear. Then we fix the success criterion: faster replies to customers, less manual entry, reporting you can trust. Only after that do we choose the tool: an assistant, document processing, an integration, or a simple script that removes steps. The first scenario is delivered on its own and put into live use, so you see the effect on your own process rather than in a demo. The next stage is scoped by what the first one showed — not by a roadmap written before the work began.</p>
   <div class="steps">
    <div class="step"><b>01</b><h3>Process audit</h3><p>We map the process, size up the manual workload and pick the slice for a pilot.</p></div>
    <div class="step"><b>02</b><h3>Scenarios and data</h3><p>We define the scenarios, data sources, integrations and the quality-control method.</p></div>
    <div class="step"><b>03</b><h3>Pilot and launch</h3><p>We build, test on real data, hand over and support after launch.</p></div>
+  </div>
+ </div></section>
+
+ <section id="scope"><div class="container">
+  <div class="eyebrow">Scope and format</div>
+  <h2>Automation scenarios and what they replace</h2>
+  <p class="intro">It makes sense to automate the part where time goes into repeated actions and mistakes are visible immediately — not "everything". Inbound inquiries usually come first: requests from the website, email and messengers land in one list with an owner and a due date. The second-highest impact area is answering common questions: the assistant handles recurring questions from your knowledge base and a person steps in on complex cases. Then documents and reporting: invoices and delivery notes are read automatically and data lands in the accounting system without manual entry. Each scenario ships separately, so you see a result in weeks rather than at the end of a large project.</p>
+  <div class="table-wrap">
+   <table>
+    <thead><tr><th>Scenario</th><th>What it replaces</th><th>What you need to start</th><th>How to measure it</th></tr></thead>
+    <tbody>
+      <tr><td>Inbound inquiries</td><td>Manual sorting of requests from email, messengers and forms</td><td>Channel list and routing rules</td><td>First response time, share of lost inquiries</td></tr>
+      <tr><td>Common questions</td><td>Repetitive answers written by the team</td><td>Knowledge base and topic boundaries</td><td>Share of inquiries closed without a person</td></tr>
+      <tr><td>Documents</td><td>Manual entry of invoices, delivery notes, contracts</td><td>Document samples and validation rules</td><td>Share of documents needing no manual fix</td></tr>
+      <tr><td>Reporting</td><td>Numbers collected by hand from several systems</td><td>Access to sources and a metric list</td><td>Hours spent preparing a report</td></tr>
+      <tr><td>External data</td><td>Manual monitoring of prices, vacancies, mentions</td><td>Source list and check frequency</td><td>Coverage and refresh speed</td></tr>
+    </tbody>
+   </table>
   </div>
  </div></section>
 
@@ -370,7 +399,7 @@ p,li{font-size:var(--fs-body);line-height:1.75}
   <div class="faq-list">
     <article class="faq-item reveal"><h3>Where does automation start?</h3><p>With one process that consumes the most time and is described precisely enough to formalise. Then you need data access and one person who will confirm the result. We don't start by replacing systems: first we test the hypothesis on a narrow slice and measure the effect in hours and errors.</p></article>
     <article class="faq-item reveal"><h3>Do we have to replace our current CRM or accounting system?</h3><p>In most cases, no. We connect to what you already use: we pull data via API or scheduled exports and push results back into the familiar system. Your team keeps working where it worked before. Replacing the platform is discussed separately, and only when the current one genuinely blocks the task.</p></article>
-    <article class="faq-item reveal"><h3>How long does a pilot take?</h3><p>A pilot is limited to one scenario — for example, automatic replies to common enquiries or data extraction from documents. That scope is enough to validate the hypothesis before full rollout and to see real numbers. The timeline depends on integration complexity and data quality; it is fixed in the work plan before the start.</p></article>
+    <article class="faq-item reveal"><h3>How long does a pilot take?</h3><p>A pilot is limited to one scenario — for example, automatic replies to common inquiries or data extraction from documents. That scope is enough to validate the hypothesis before full rollout and to see real numbers. The timeline depends on integration complexity and data quality; it is fixed in the work plan before the start.</p></article>
     <article class="faq-item reveal"><h3>What happens to our data?</h3><p>indagor.online sets no cookies and loads no third-party analytics or tracking services. There are no counters, no pixel tags and no visitor identifiers on this site.</p></article>
   </div>
  </div></section>

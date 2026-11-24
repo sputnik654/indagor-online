@@ -8,23 +8,23 @@ This site is available for AI indexing and retrieval at https://indagor.online. 
 
 - [Digital products](https://indagor.online/#expertise): corporate websites, web applications, customer portals, internal platforms and integrations.
 - [AI and automation](https://indagor.online/#expertise): intelligent assistants, bots, automation of requests, documents and repetitive operations.
-- [CRM, analytics and operations](https://indagor.online/#expertise): request tracking, service integrations, management reporting, data visualisation.
-- [Real estate digital ecosystems](https://indagor.online/#expertise): solutions for shopping and business centres — tenants, units, requests, services and operations.
+- [CRM, analytics and operations](https://indagor.online/#expertise): request tracking, service integrations, management reporting, data visualization.
+- [Real estate digital ecosystems](https://indagor.online/#expertise): solutions for shopping and business centers — tenants, units, requests, services and operations.
 
 ## Product
 
-- [Klondayk](https://indagor.online/klondayk/): dedicated product page — modules, principles, platform composition. Summary on the home page: https://indagor.online/#klondayk. A platform concept for managing digital services of commercial real estate — shopping and business centres, commercial spaces and their tenants. Architecture and module set adapt to each property. Built by INDAGOR.
+- [Klondayk](https://indagor.online/klondayk/): dedicated product page — modules, principles, platform composition. Summary on the home page: https://indagor.online/#klondayk. A platform concept for managing digital services of commercial real estate — shopping and business centers, commercial spaces and their tenants. Architecture and module set adapt to each property. Built by INDAGOR.
 
 ## Site pages
 
 - [Home](https://indagor.online/): capabilities, process, FAQ.
 - [AI and automation](https://indagor.online/services/ai-automation/): AI assistants, document processing, CRM integrations, data parsing.
-- [Web development](https://indagor.online/services/web-development/): landing pages, corporate websites, web applications, customer portals, catalogues, integrations.
+- [Web development](https://indagor.online/services/web-development/): landing pages, corporate websites, web applications, customer portals, catalogs, integrations.
 - [CRM and analytics](https://indagor.online/services/crm-analytics/): CRM setup, lead tracking, integrations, dashboards and management reporting.
 - [Klondayk](https://indagor.online/klondayk/): platform for commercial real estate.
 - [About](https://indagor.online/about/): working principles, approach to technology, process.
 - [Insights](https://indagor.online/blog/): process breakdowns and practical material.
-  - [What to automate first: 5 processes](https://indagor.online/blog/what-to-automate-first/): enquiries, customer replies, reporting, documents, data collection — selection criteria and effect metrics.
+  - [What to automate first: 5 processes](https://indagor.online/blog/what-to-automate-first/): inquiries, customer replies, reporting, documents, data collection — selection criteria and effect metrics.
 - [Privacy Policy](https://indagor.online/privacy.html).
 - [Offer / legal information](https://indagor.online/offer.html).
 
@@ -38,5 +38,14 @@ This site is available for AI indexing and retrieval at https://indagor.online. 
 
 - [Company summary (JSON)](https://indagor.online/ai/summary.json): services, key pages, contacts, citation permission.
 - [FAQ for AI (JSON)](https://indagor.online/ai/faq.json): six questions and answers about the studio and the Klondayk platform.
-- [Service catalogue (JSON)](https://indagor.online/ai/service.json): three services and the Klondayk product with descriptions and links.
+- [Service catalog (JSON)](https://indagor.online/ai/service.json): three services and the Klondayk product with descriptions and links.
 - [Blog RSS](https://indagor.online/rss.xml): articles and site updates.
+- [AI crawler access policy](https://indagor.online/.well-known/ai.txt) and [ai.txt](https://indagor.online/ai.txt).
+
+## For AI agents
+
+- Canonical site: https://indagor.online — the whole site is available for AI indexing and citation. Russian original: https://indagor.ru
+- Crawling: https://indagor.online/robots.txt explicitly allows GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, Claude-Web, PerplexityBot, Google-Extended, Applebot-Extended, CCBot, YandexAdditional.
+- Structured data on the page: Organization (sameAs, contactPoint), WebPage (dates, author), WebSite (SearchAction), 4 x Service, Product (Klondayk), FAQPage with 5 questions.
+- Sitemap: https://indagor.online/sitemap.xml — with hreflang pairs (en / ru / x-default).
+- Contact for AI agents and humans: indagor.ceo@gmail.com, https://t.me/INDAGOR_CEO

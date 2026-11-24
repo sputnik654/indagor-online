@@ -4,7 +4,7 @@
   "name": "INDAGOR services",
   "url": "https://indagor.online/",
   "inLanguage": "en-US",
-  "lastUpdated": "2026-11-22",
+  "lastUpdated": "2026-11-24",
   "itemListElement": [
     {
       "@type": "Offer",
@@ -12,7 +12,7 @@
         "@type": "Service",
         "name": "Web development",
         "serviceType": "Corporate website and web application development",
-        "description": "Landing pages, corporate websites, web applications and customer portals, catalogues and product showcases, CRM and third-party integrations.",
+        "description": "Landing pages, corporate websites, web applications and customer portals, catalogs and product showcases, CRM and third-party integrations.",
         "url": "https://indagor.online/services/web-development/",
         "provider": {
           "@id": "https://indagor.online/#organization"
@@ -57,5 +57,12 @@
         }
       }
     }
+  ],
+  "capabilities": [
+    "Corporate websites, landing pages and web applications",
+    "Customer portals, catalogs and internal platforms",
+    "AI assistants and chatbots for support and lead qualification",
+    "Document processing and automation of repetitive operations",
+    "CRM implementation, lead tracking and management reporting"
   ]
 }

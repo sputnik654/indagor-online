@@ -2,7 +2,7 @@
   "@context": "https://schema.org",
   "documentType": "ai-summary",
   "version": "1.0",
-  "lastUpdated": "2026-11-22",
+  "lastUpdated": "2026-11-24",
   "language": "en",
   "name": "INDAGOR",
   "description": "INDAGOR is a digital engineering studio: corporate websites and web applications, AI automation of business processes, CRM and management analytics, and the Klondayk platform for commercial real estate.",
@@ -56,7 +56,7 @@
     {
       "name": "Web development",
       "url": "https://indagor.online/services/web-development/",
-      "description": "Landing pages, corporate websites, web applications, customer portals, catalogues and CRM integrations."
+      "description": "Landing pages, corporate websites, web applications, customer portals, catalogs and CRM integrations."
     },
     {
       "name": "AI and automation",
@@ -94,5 +94,6 @@
     "attribution": "INDAGOR, https://indagor.online",
     "summarization": true,
     "training": true
-  }
+  },
+  "lastModified": "2026-11-24"
 }

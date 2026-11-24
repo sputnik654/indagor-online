@@ -5,18 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080909">
 <!-- ===== BING SITE VERIFICATION =====
-     Bing Webmaster Tools → "Add site" → https://indagor.online → "Meta tag" method.
-     Bing generates the code; paste it in place of YOUR_BING_CODE and uncomment the line.
-     Alternative: Bing provides a BingSiteAuth.xml file — put it in the root next to index.html.
+     The <meta name="msvalidate.01" content="YOUR_BING_CODE"> placeholder was removed on 24.11.2026:
+     a placeholder verifies nothing and only adds noise to the markup.
+     If you later verify by meta tag, add the line with the real code:
+       <meta name="msvalidate.01" content="CODE_FROM_BING_PANEL">
+     Alternative: the BingSiteAuth.xml file in the site root.
 
-<meta name="msvalidate.01" content="YOUR_BING_CODE" />
 ====================================== -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 <title>Web Development and AI Automation for Business — INDAGOR</title>
-<meta name="description" content="Websites, web applications, AI assistants and CRM for business. We design digital products, process automation and platform solutions for commercial real estate.">
+<meta name="description" content="Websites, web applications, AI assistants and CRM for business. We design digital products, automation and platform solutions for commercial real estate.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://indagor.online/">
  <link rel="alternate" hreflang="en" href="https://indagor.online/">
@@ -182,7 +183,7 @@
    "@id": "https://indagor.online/#service-crm-analytics",
    "name": "CRM, analytics and operations",
    "serviceType": "CRM and management analytics implementation",
-   "description": "Request tracking, service integrations, management reporting and data visualisation.",
+   "description": "Request tracking, service integrations, management reporting and data visualization.",
    "provider": {
     "@id": "https://indagor.online/#organization"
    },
@@ -197,7 +198,7 @@
    "@id": "https://indagor.online/#service-real-estate",
    "name": "Real estate digital ecosystems",
    "serviceType": "Commercial real estate digitisation",
-   "description": "Solutions for shopping and business centres: tenants, units, requests, services and day-to-day operations.",
+   "description": "Solutions for shopping and business centers: tenants, units, requests, services and day-to-day operations.",
    "provider": {
     "@id": "https://indagor.online/#organization"
    },
@@ -529,6 +530,8 @@ p,li{font-size:var(--fs-body);line-height:1.75}
 .footer-inner a,.footer-mail{display:inline-flex;align-items:center;gap:8px}
 .footer-mail-ico{flex:0 0 auto;opacity:.9}
 </style>
+<meta name="analytics-endpoint" content="https://bright-wisp-6c6965.netlify.app/track">
+<script defer src="/assets/analytics-tracker.js?v=1"></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -570,7 +573,7 @@ p,li{font-size:var(--fs-body);line-height:1.75}
      </div></div>
     <figure class="klondayk-visual">
     <div class="floating-image">
-     <img class="klondayk-visual-img" src="/assets/klondayk-visual-hq.webp" alt="Klondayk — platform for commercial real estate" width="880" height="880" loading="lazy" decoding="async">
+     <img class="klondayk-visual-img" src="/assets/klondayk-visual-hq.webp" srcset="/assets/klondayk-visual-hq-480.webp 480w, /assets/klondayk-visual-hq-720.webp 720w, /assets/klondayk-visual-hq.webp 880w" sizes="(max-width: 700px) calc(100vw - 57px), (max-width: 820px) calc(100vw - 152px), (max-width: 1100px) 340px, 460px" alt="Klondayk — platform for commercial real estate" width="880" height="880" loading="lazy" decoding="async">
     </div>
    </figure>
    </div>
@@ -583,8 +586,8 @@ p,li{font-size:var(--fs-body);line-height:1.75}
    <div class="grid">
     <article class="card reveal"><span class="card-icon"><svg viewBox="0 0 256 256" fill="currentColor" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M216,42H40A14,14,0,0,0,26,56V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V56A14,14,0,0,0,216,42Zm2,158a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V56a2,2,0,0,1,2-2H216a2,2,0,0,1,2,2ZM78,84A10,10,0,1,1,68,74,10,10,0,0,1,78,84Zm40,0a10,10,0,1,1-10-10A10,10,0,0,1,118,84Z"/></svg></span><span class="card-num">01 / DIGITAL PRODUCTS</span><span class="card-arrow">↗</span><h3>Digital products</h3><p>Corporate websites, web applications, customer portals, internal platforms and integrations.</p><a class="card-more" href="/services/web-development/" aria-label="Learn more: digital products and web development">Learn more <span aria-hidden="true">→</span></a></article>
     <article class="card reveal"><span class="card-icon"><svg viewBox="0 0 256 256" fill="currentColor" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M246,124a54.13,54.13,0,0,0-32-49.33V72a46,46,0,0,0-86-22.67A46,46,0,0,0,42,72v2.67a54,54,0,0,0,0,98.63V176a46,46,0,0,0,86,22.67A46,46,0,0,0,214,176v-2.7A54.07,54.07,0,0,0,246,124ZM88,210a34,34,0,0,1-34-32.94A53.67,53.67,0,0,0,64,178h8a6,6,0,0,0,0-12H64A42,42,0,0,1,50,84.39a6,6,0,0,0,4-5.66V72a34,34,0,0,1,68,0v73.05A45.89,45.89,0,0,0,88,130a6,6,0,0,0,0,12,34,34,0,0,1,0,68Zm104-44h-8a6,6,0,0,0,0,12h8a53.67,53.67,0,0,0,10-.94A34,34,0,1,1,168,142a6,6,0,0,0,0-12,45.89,45.89,0,0,0-34,15.05V72a34,34,0,0,1,68,0v6.73a6,6,0,0,0,4,5.66A42,42,0,0,1,192,166Zm14-54a6,6,0,0,1-6,6h-4a34,34,0,0,1-34-34V80a6,6,0,0,1,12,0v4a22,22,0,0,0,22,22h4A6,6,0,0,1,206,112ZM60,118H56a6,6,0,0,1,0-12h4A22,22,0,0,0,82,84V80a6,6,0,0,1,12,0v4A34,34,0,0,1,60,118Z"/></svg></span><span class="card-num">02 / AI &amp; AUTOMATION</span><span class="card-arrow">↗</span><h3>AI and automation</h3><p>Intelligent assistants, bots, and automation of requests, documents and repetitive operations.</p><a class="card-more" href="/services/ai-automation/" aria-label="Learn more: AI and automation">Learn more <span aria-hidden="true">→</span></a></article>
-    <article class="card reveal"><span class="card-icon"><svg viewBox="0 0 256 256" fill="currentColor" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M230,208a6,6,0,0,1-6,6H32a6,6,0,0,1-6-6V48a6,6,0,0,1,12,0V161.52l53.76-53.76a6,6,0,0,1,8.48,0L128,135.51,185.52,78H160a6,6,0,0,1,0-12h40a6,6,0,0,1,6,6v40a6,6,0,0,1-12,0V86.48l-61.76,61.76a6,6,0,0,1-8.48,0L96,120.49l-58,58V202H224A6,6,0,0,1,230,208Z"/></svg></span><span class="card-num">03 / DATA &amp; MANAGEMENT</span><span class="card-arrow">↗</span><h3>CRM, analytics and operations</h3><p>Request tracking, service integrations, management reporting and data visualisation.</p><a class="card-more" href="/services/crm-analytics/" aria-label="Learn more: CRM and analytics">Learn more <span aria-hidden="true">→</span></a></article>
-    <article class="card reveal"><span class="card-icon"><svg viewBox="0 0 256 256" fill="currentColor" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M240,210H222V96a14,14,0,0,0-14-14H142V32a14,14,0,0,0-21.77-11.64l-80,53.33A14,14,0,0,0,34,85.34V210H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM208,94a2,2,0,0,1,2,2V210H142V94ZM46,85.34a2,2,0,0,1,.89-1.66l80-53.34A2,2,0,0,1,130,32V210H46ZM110,112v16a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0Zm-32,0v16a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0Zm0,56v16a6,6,0,0,1-12,0V168a6,6,0,0,1,12,0Zm32,0v16a6,6,0,0,1-12,0V168a6,6,0,0,1,12,0Z"/></svg></span><span class="card-num">04 / REAL ESTATE</span><span class="card-arrow">↗</span><h3>Real estate digital ecosystems</h3><p>Solutions for shopping and business centres: tenants, units, requests, services and day-to-day operations.</p></article>
+    <article class="card reveal"><span class="card-icon"><svg viewBox="0 0 256 256" fill="currentColor" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M230,208a6,6,0,0,1-6,6H32a6,6,0,0,1-6-6V48a6,6,0,0,1,12,0V161.52l53.76-53.76a6,6,0,0,1,8.48,0L128,135.51,185.52,78H160a6,6,0,0,1,0-12h40a6,6,0,0,1,6,6v40a6,6,0,0,1-12,0V86.48l-61.76,61.76a6,6,0,0,1-8.48,0L96,120.49l-58,58V202H224A6,6,0,0,1,230,208Z"/></svg></span><span class="card-num">03 / DATA &amp; MANAGEMENT</span><span class="card-arrow">↗</span><h3>CRM, analytics and operations</h3><p>Request tracking, service integrations, management reporting and data visualization.</p><a class="card-more" href="/services/crm-analytics/" aria-label="Learn more: CRM and analytics">Learn more <span aria-hidden="true">→</span></a></article>
+    <article class="card reveal"><span class="card-icon"><svg viewBox="0 0 256 256" fill="currentColor" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M240,210H222V96a14,14,0,0,0-14-14H142V32a14,14,0,0,0-21.77-11.64l-80,53.33A14,14,0,0,0,34,85.34V210H16a6,6,0,0,0,0,12H240a6,6,0,0,0,0-12ZM208,94a2,2,0,0,1,2,2V210H142V94ZM46,85.34a2,2,0,0,1,.89-1.66l80-53.34A2,2,0,0,1,130,32V210H46ZM110,112v16a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0Zm-32,0v16a6,6,0,0,1-12,0V112a6,6,0,0,1,12,0Zm0,56v16a6,6,0,0,1-12,0V168a6,6,0,0,1,12,0Zm32,0v16a6,6,0,0,1-12,0V168a6,6,0,0,1,12,0Z"/></svg></span><span class="card-num">04 / REAL ESTATE</span><span class="card-arrow">↗</span><h3>Real estate digital ecosystems</h3><p>Solutions for shopping and business centers: tenants, units, requests, services and day-to-day operations.</p></article>
    </div>
   </div>
  </section>
@@ -592,7 +595,7 @@ p,li{font-size:var(--fs-body);line-height:1.75}
  <!-- poster between capabilities and "Our principle" -->
  <figure class="poster"><div class="container">
   <div class="floating-image">
-   <img src="/assets/home-manifesto-hero.webp" alt="INDAGOR digital systems architecture" width="1000" height="1000" loading="lazy" decoding="async">
+   <img src="/assets/home-manifesto-hero.webp" srcset="/assets/home-manifesto-hero-480.webp 480w, /assets/home-manifesto-hero-720.webp 720w, /assets/home-manifesto-hero.webp 1000w" sizes="(max-width: 700px) calc(100vw - 30px), 640px" alt="INDAGOR digital systems architecture" width="1000" height="1000" loading="lazy" decoding="async">
   </div>
  </div></figure>
 
