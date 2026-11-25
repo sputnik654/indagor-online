@@ -76,3 +76,75 @@ jobs:
             done
           done
           exit $fail
+
+      - name: Живой домен indagor.online (после переезда на Cloudflare)
+        run: |
+          set -u
+          fail=0
+          host=indagor.online
+          UA="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+          while read -r p want; do
+            [ -z "${p:-}" ] && continue
+            code=$(curl -sS -o /dev/null -w '%{http_code}' -m 25 --retry 2 --retry-delay 2 "https://$host$p" || echo 000)
+            if [ "$code" = "$want" ]; then printf 'OK   %-18s %-28s %s\n' "$host" "$p" "$code"
+            else printf 'FAIL %-18s %-28s %s (ожидался %s)\n' "$host" "$p" "$code" "$want"; fail=1; fi
+          done <<'LIST'
+          / 200
+          /klondayk/ 200
+          /offer/ 200
+          /privacy/ 200
+          /offer.html 301
+          /privacy.html 301
+          /llms.txt 200
+          /sitemap.xml 200
+          /robots.txt 200
+          /ai/summary.json 200
+          /.well-known/ai.txt 200
+          /nope-xyz 404
+          /track 405
+          /stats 401
+          LIST
+          out=$(curl -sS -m 25 --retry 2 -X POST "https://$host/track" -H 'content-type: text/plain;charset=UTF-8' -A "$UA" \
+                --data-binary '{"type":"pageview","consent":false,"path":"/__smoke__/","ua_type":"desktop","lang":"en-US","viewport":1280}')
+          echo "POST https://$host/track -> $out"
+          case "$out" in *'"ok":true'*) ;; *) echo "FAIL события не принимаются"; fail=1 ;; esac
+          exit $fail
+
+      - name: www → apex 301
+        run: |
+          set -u
+          fail=0
+          for host in www.indagor.online; do
+            loc=$(curl -sS -o /dev/null -D - -m 25 --retry 2 "https://$host/offer/?x=1" \
+                  | awk 'tolower($1)=="location:"{print $2}' | tr -d '\r')
+            code=$(curl -sS -o /dev/null -w '%{http_code}' -m 25 --retry 2 "https://$host/")
+            echo "www-проверка $host: код=$code location=$loc"
+            want="https://${host#www.}/offer/?x=1"
+            if [ "$loc" = "$want" ]; then echo "OK   $host → $loc"
+            else echo "FAIL $host: '$loc' вместо '$want'"; fail=1; fi
+          done
+          exit $fail
+
+      - name: Статистика по токену (если секрет задан)
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          fail=0
+          if [ -z "${STATS_TOKEN:-}" ]; then echo "SKIP секрет STATS_TOKEN не задан"; exit 0; fi
+          for host in indagor-pages.pages.dev indagor-online-pages.pages.dev; do
+            code=$(curl -sS -o /tmp/stats.json -w '%{http_code}' -m 25 -H "x-auth-token: $STATS_TOKEN" "https://$host/stats")
+            if [ "$code" != "200" ]; then echo "FAIL $host/stats -> $code"; fail=1; continue; fi
+            python3 - "$host" <<'PY2'
+          import json, sys
+          d = json.load(open("/tmp/stats.json"))
+          need = ["total", "total_anonymous", "total_consented", "consents", "sessions",
+                  "avg_duration_sec", "by_page", "by_day", "by_hour"]
+          miss = [k for k in need if k not in d]
+          print(f"OK   {sys.argv[1]}/stats total={d.get('total')} anon={d.get('total_anonymous')} "
+                f"consents={d.get('consents')} sessions={d.get('sessions')} pages={len(d.get('by_page') or {})}")
+          if miss:
+              print("FAIL нет полей:", miss); sys.exit(1)
+          PY2
+            [ $? -eq 0 ] || fail=1
+          done
+          exit $fail
