@@ -25,8 +25,8 @@ This site is available for AI indexing and retrieval at https://indagor.online. 
 - [About](https://indagor.online/about/): working principles, approach to technology, process.
 - [Insights](https://indagor.online/blog/): process breakdowns and practical material.
   - [What to automate first: 5 processes](https://indagor.online/blog/what-to-automate-first/): inquiries, customer replies, reporting, documents, data collection — selection criteria and effect metrics.
-- [Privacy Policy](https://indagor.online/privacy.html).
-- [Offer / legal information](https://indagor.online/offer.html).
+- [Privacy Policy](https://indagor.online/privacy/).
+- [Offer / legal information](https://indagor.online/offer/).
 
 ## Contacts
 
