@@ -185,8 +185,6 @@ body.has-cookie{padding-bottom:118px}
 .footer-inner a,.footer-mail{display:inline-flex;align-items:center;gap:8px}
 .footer-mail-ico{flex:0 0 auto;opacity:.9}
 </style>
-<meta name="analytics-endpoint" content="https://indagor.online/track">
-<script defer src="/assets/analytics-tracker.js?v=1"></script>
 </head>
 <body>
 <header><div class="container">
@@ -233,7 +231,7 @@ body.has-cookie{padding-bottom:118px}
   <h2>5. Cookies and analytics services</h2>
   <p>Cookies are small text files stored in the browser. They are used for the correct operation of the Site and for statistics. A visitor may delete stored cookies at any time and block their storage in the browser settings; some elements of the Site may then behave differently.</p>
   <p>These services are operated by third parties: Yandex LLC (Russian Federation) and Google LLC / Google Ireland Limited (USA, Ireland). Data processing by these services is governed by their own privacy policies. When Google services are used, anonymised technical data may be transferred across borders outside the Russian Federation.</p>
-  <p>The proprietary INDAGOR counter works without cookies: the tab identifier is kept only in browser memory (sessionStorage) and disappears when the tab is closed. The IP address is not transmitted or stored, and the full User-Agent is not recorded — only the device type. Events are stored in Netlify Blobs (Netlify, Inc., USA) in anonymised form; they contain no personal data and cannot be linked to a specific visitor.</p>
+  <p>The Site runs no proprietary visit counter: it does not collect page-view statistics or transfer visit data to third parties. Traffic statistics are provided only by the services listed above (Yandex.Metrica, Google) and only after the visitor's consent.</p>
 
   <div class="note">You can disable cookies in your browser or use private browsing at any time. This site does not set cookies, so its behavior will not change.</div>
 
@@ -385,7 +383,7 @@ body.has-cookie{padding-bottom:118px}
 <!-- cookie banner -->
 <aside class="cookie" id="cookieBar" aria-label="Cookie consent" hidden>
  <div class="container cookie-inner">
-  <p class="cookie-text">We use cookies and analytics services. Until you consent, only an anonymous page-view counter runs — no cookies, no IP address, no visitor identifiers. Analytics services switch on after you press Accept.</p>
+  <p class="cookie-text">We use cookies and analytics services. No counters load until you consent. Analytics services switch on after you press Accept.</p>
   <div class="cookie-actions">
    <a class="cookie-link" href="privacy/" target="_blank" rel="noopener">Privacy Policy</a>
    <button type="button" class="cookie-btn" id="cookieAccept">Accept</button>
