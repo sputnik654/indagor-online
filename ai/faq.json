@@ -42,7 +42,7 @@
       "name": "What do you need to start?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A description of the task: what should change in the process and what outcome you expect. If you have materials — the current website, process maps, examples of systems — attach them. Everything else is clarified in the first call: constraints, deadlines, budget range. You then receive a proposal with stages, price and plan."
+        "text": "A description of the task: what should change in the process and what outcome you expect. If you have materials — the current website, process maps, examples of systems — attach them. Everything else is clarified in the first conversation: constraints, deadlines, budget range. You then receive a proposal with stages, price and plan."
       }
     }
   ],
@@ -65,7 +65,7 @@
     },
     {
       "question": "What do you need to start?",
-      "answer": "A description of the task: what should change in the process and what outcome you expect. If you have materials — the current website, process maps, examples of systems — attach them. Everything else is clarified in the first call: constraints, deadlines, budget range. You then receive a proposal with stages, price and plan."
+      "answer": "A description of the task: what should change in the process and what outcome you expect. If you have materials — the current website, process maps, examples of systems — attach them. Everything else is clarified in the first conversation: constraints, deadlines, budget range. You then receive a proposal with stages, price and plan."
     }
   ]
 }
